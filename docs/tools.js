@@ -449,8 +449,8 @@ function generateRandomCharacter(swap) {
         case 3: /* Sailor */
             iPets += 1;
             sPets = randomBool() ?
-                "pappagallo parlante(FOR 6, VOL 6, 2pf, d4 Artigli)" :
-                "scimietta (FOR 7, VOL 7, 3pf, d4 Morso)";
+                "pappagallo parlante (FOR 6, VOL 6, 2pf, d4 Artigli)" :
+                "scimmietta (FOR 7, VOL 7, 3pf, d4 Morso)";
             sBackground += " (ti intendi di navigazione marittima)";
             break;
 
@@ -837,7 +837,7 @@ function generateRandomCharacter(swap) {
     log("After filtering:");
     log(sItemsList);
 
-    sItemsList.push("vestiti semplici (indossati), attrezzattura essenziale per accamparsi, 6&nbsp;torce, razioni per 3&nbsp;giorni");
+    sItemsList.push("vestiti semplici (indossati), attrezzatura essenziale per accamparsi, 6&nbsp;torce, razioni per 3&nbsp;giorni");
 
     /* Armour */
     let sArmour = "";
@@ -860,7 +860,7 @@ function generateRandomCharacter(swap) {
     out.innerHTML = addItem(out.innerHTML, sPets);
     out.innerHTML = addItem(out.innerHTML, sBackground);
     out.innerHTML = addItem(out.innerHTML, sFeature) + ".";
-    out.innerHTML += "<br/><br/>Zaino: " + sItemsList.join(", ") + ", " + iStats[3] + "s";
+    out.innerHTML += "<br/><br/>Zaino: " + sItemsList.join(", ") + ", " + iStats[3] + "s.";
     if(sTome.length > 0) {
         out.innerHTML += "<br/><br/>" + sTome;
     }
